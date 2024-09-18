@@ -1,6 +1,24 @@
+@import url(https://fonts.google.com/share?selection.family=Jost:ital,wght@0,100..900;1,100..900|Roboto+Slab:wght@100..900);
 body{
+    direction: rtl;
+    font-family:  " Jost"
+}
+body::after{
+    content: "";
     background-image: url(../public/Main-img/body-back.jfif);
     background-repeat: no-repeat;
     background-size: cover;
-
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(240,240,240);
+    padding-top: 2rem;
 }

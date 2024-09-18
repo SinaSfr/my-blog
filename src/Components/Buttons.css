@@ -1,0 +1,7 @@
+.btn-styles{
+    background-color: #FFCC00;
+    border: none;
+    border-radius: 0.2rem ;
+    display: flex;
+    padding: 0.2rem;
+}
