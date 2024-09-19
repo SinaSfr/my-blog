@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header>
       <div className='d-flex align-items-center gap-3'>
-        <h1 className='text-white m-0'>سینا صفری</h1>
+        <h1 className='text-white mb-0'>سینا صفری</h1>
         <h6 className='m-0'>توسعه دهنده فرانت اند</h6>
       </div>
       <div className='d-flex justify-content-between' style={{width: "30%"}}>
@@ -24,7 +24,7 @@ export default function Header() {
           <SocialBtn onClick={clickHandler} backgroundColor="" icon={<GitHub sx={{ fontSize: "1.2rem" }} />} style={{backgroundColor: "#E01964"}}></SocialBtn>
         </div>
         <div className='d-flex align-items-center'>
-          <Buttons onClick={clickHandler} icon={<Brightness7 sx={{ fontSize: "1.6rem" }} />}></Buttons>
+          <Buttons onClick={clickHandler} icon={<Brightness7 sx={{ fontSize: "1.8rem" }} />}></Buttons>
         </div>
       </div>
     </header>
