@@ -8,7 +8,7 @@ html body{
 }
 body::after{
     content: "";
-    background-image: url(../public/Main-img/body-back.jfif);
+    background-image: url(../public/Main-img/background-body.jpg);
     background-repeat: no-repeat;
     opacity: 0.6;
     background-size: cover;
@@ -22,6 +22,6 @@ body::after{
 .container{
     width: 80%;
     margin: 0 auto;
-    background-color: rgb(240,240,240);
+    background-color: rgb(240, 240, 240);
     padding-top: 2rem;
 }

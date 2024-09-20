@@ -1,7 +1,7 @@
 import React from 'react'
 import './Header.css'
-import Buttons from '../Components/Buttons'
-import SocialBtn from '../Components/SocialBtn';
+import Buttons from '../Components/Buttons/Buttons'
+import SocialBtn from '../Components/SocialBtn/SocialBtn';
 import {Brightness7, Telegram, Instagram, LinkedIn, GitHub} from '@mui/icons-material';
 
 
