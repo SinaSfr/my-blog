@@ -1,0 +1,11 @@
+aside{
+    width: 30%;
+    display: flex;
+    align-self: flex-start;
+    background-color: #000000;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+aside img{
+    width: 100%;
+}

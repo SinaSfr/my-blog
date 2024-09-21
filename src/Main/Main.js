@@ -1,10 +1,13 @@
 import React from 'react'
 import Buttons from '../Components/Buttons/Buttons'
 import List from '../Components/InformationList/List'
-import PeopleIcon from '@mui/icons-material/People';
-import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
-import ChecklistRtlIcon from '@mui/icons-material/ChecklistRtl';
+import StatisticCard from '../Components/StatisticCard/StatisticCard'
+import {PeopleAlt, MilitaryTech, ChecklistRtl, Lan} from '@mui/icons-material';
+// import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
+// import ChecklistRtlIcon from '@mui/icons-material/ChecklistRtl';
+// import LanIcon from '@mui/icons-material/Lan';
 import './Main.css'
+
 
 export default function Main() {
   return (
@@ -41,6 +44,12 @@ export default function Main() {
             ]} />
           </div>
         </div>
+      </div>
+      <div className='d-flex flex-wrap'>
+        <StatisticCard icon={<ChecklistRtl sx={{fontSize: "2rem"}}/>} number="136" title="پروژه های انجام شده"/>
+        <StatisticCard icon={<PeopleAlt sx={{fontSize: "2rem"}}/>} number="136" title="مشتریان راضی"/>
+        <StatisticCard icon={<MilitaryTech sx={{fontSize: "2rem"}}/>} number="136" title="جوایز دریافت شده"/>
+        <StatisticCard icon={<Lan sx={{fontSize: "2rem"}}/>} number="136" title="دامنه های بنام"/>
       </div>
     </main>
   )

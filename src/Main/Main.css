@@ -1,4 +1,5 @@
 main{
+    max-width: 100%;
     display: flex;
     background-color: #000000;
     border-radius: 0.5rem;
