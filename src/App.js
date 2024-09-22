@@ -8,11 +8,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <div className='container d-flex gap-3'>
+     <div className='container d-flex gap-3'>
         <Sidebar />
       <div className='d-flex flex-column max-w-100'>
         <Header />
-        <Main />
+        <Main/>
       </div>
     </div>
   );

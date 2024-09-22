@@ -2,16 +2,18 @@
     font-family: "Vazir";
     src: url(./fonts/Vazir.woff2) format("woff2");
 }
-html body{
+
+html body {
     direction: rtl;
     font-family: "Vazir";
 }
-body::after{
+
+body::after {
     height: 100%;
     content: "";
-    background-image: url(../public/Main-img/background-body.jpg);
+    background-image: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)),
+        url(../public/Main-img/background-body.jpg);
     background-repeat: no-repeat;
-    opacity: 0.6;
     background-size: cover;
     position: fixed;
     top: 0;
@@ -20,12 +22,14 @@ body::after{
     bottom: 0;
     z-index: -100;
 }
-.container{
+
+.container {
     width: 80%;
     margin: 0 auto;
-    background-color: rgb(240, 240, 240);
+    background-color: gray;
     padding-top: 2.2rem;
 }
-.max-w-100{
+
+.max-w-100 {
     max-width: 100%;
 }

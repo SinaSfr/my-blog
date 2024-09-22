@@ -1,0 +1,31 @@
+.aboutme-img{
+    width: 100%;
+    object-fit: cover;
+    height: 20rem;
+    border-radius: 0.5rem;
+    position: relative;
+    opacity: 0.5;
+}
+
+.img-information{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 12%;
+    right: 2%;
+    gap: 0.5rem;
+}
+.img-information h2{
+    color: #FFCC00;
+}
+.img-information p{
+    color: #ffffff;
+    font-size: 1.2rem;
+    max-width: 75%;
+}
+.text-yellow{
+    color: #FFCC00;
+}
+.min-w-50{
+    min-width: 50%;
+}
