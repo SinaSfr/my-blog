@@ -13,8 +13,8 @@ export default function Header() {
   return (
     <header>
       <div className='d-flex align-items-center gap-3'>
-        <h1 className='text-white mb-0'>سینا صفری</h1>
-        <h6 className='m-0'>توسعه دهنده فرانت اند</h6>
+        <h1 className='text-white mb-0 fs-1'>سینا صفری</h1>
+        <h6 className='m-0 fs-14'>توسعه دهنده فرانت اند</h6>
       </div>
       <div className='d-flex justify-content-between' style={{width: "30%"}}>
         <div className='d-flex gap-2 align-items-center'>

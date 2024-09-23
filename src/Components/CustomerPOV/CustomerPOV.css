@@ -1,0 +1,17 @@
+.customerPov-img{
+    border-top: 2px solid #FFCC00;
+    border-radius: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+}
+.opinion-wrapper{
+    background-color: #1A1A1A;
+    border-top: 3px solid #FFCC00;
+    border-radius: 0.5rem;
+    padding: 1rem 0.5rem;
+}
+.customer-profile{
+    position: absolute;
+    bottom: 75%;
+    right: 5%;
+}

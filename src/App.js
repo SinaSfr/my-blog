@@ -10,7 +10,7 @@ function App() {
   return (
      <div className='container d-flex gap-3'>
         <Sidebar />
-      <div className='d-flex flex-column max-w-100'>
+      <div className='d-flex flex-column w-100'>
         <Header />
         <Main/>
       </div>

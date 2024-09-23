@@ -1,0 +1,13 @@
+.skill-bar-background{
+    display: flex;
+    width: 100%;
+    height: 0.6rem;
+    border-radius: 0.6rem;
+    background-color: #1A1A1A;
+}
+.skill-bar-value{
+    background-color: #FFCC00;
+    border-radius: 0.6rem;
+    box-shadow: inset -0.25rem -0.25rem 0.3125rem rgba(0, 0, 0, 0.1),
+     inset 0.25rem 0.25rem 0.3125rem rgba(255, 255, 255, 0.23)
+}
