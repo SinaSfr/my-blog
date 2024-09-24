@@ -1,0 +1,25 @@
+.work-example{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.work-example img{
+    width: 17rem;
+    height: 17rem;
+    border-radius: 0.5rem;
+}
+.work-example img:hover{
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+.work-example div{
+    background-color: #ffcc00;
+    opacity: 0.6;
+    align-self: flex-start;
+    font-size: 12px;
+    padding: 0.3rem 0.3rem 0.2rem;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 6%;
+    right: 2%;
+}

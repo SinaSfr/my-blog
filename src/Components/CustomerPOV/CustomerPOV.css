@@ -1,8 +1,8 @@
 .customerPov-img{
     border-top: 2px solid #FFCC00;
     border-radius: 0.5rem;
-    width: 5rem;
-    height: 5rem;
+    width: 4.5rem;
+    height: 4.5rem;
 }
 .opinion-wrapper{
     background-color: #1A1A1A;
@@ -12,6 +12,9 @@
 }
 .customer-profile{
     position: absolute;
-    bottom: 75%;
+    bottom: 80%;
     right: 5%;
+}
+.mt-64{
+    margin-top: 4rem;
 }
