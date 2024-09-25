@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import WorkExampleBox from '../Components/WorkExampleBox/WorkExampleBox'
+import ModalWork from '../Components/ModalWork/ModalWork'
 
 export default function WorkExamplePage() {
     const [showModal, setShowModal] = useState(false)
