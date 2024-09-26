@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './WorkExampleBox.css'
 
-export default function WorkExampleBox({ src, title, onClick }) {
+export default function WorkExampleBox({ datas, clickHandler }) {
     return (
-        <div className='work-example' onClick={onClick}>
-            <img src={src} alt="" />
-            <div>{title}</div>
-        </div>
+        <>
+            {datas.map((data) => (
+                <div key={data.id} className='work-example' onClick={clickHandler}>
+                    <img src={data.src} alt="" />
+                    <div>{data.title}</div>
+                </div>
+            ))}
+        </>
     )
 }

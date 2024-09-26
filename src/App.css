@@ -3,11 +3,16 @@
     src: url(./fonts/Vazir.woff2) format("woff2");
 }
 
+html{
+    box-sizing: border-box;
+}
 html body {
     direction: rtl;
     font-family: "Vazir";
 }
-
+*,*:after,*:before{
+    box-sizing: inherit;
+}
 body::after {
     height: 100%;
     content: "";
