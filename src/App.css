@@ -31,7 +31,6 @@ body::after {
 .container {
     width: 80%;
     margin: 0 auto;
-    background-color: gray;
     padding-top: 2.2rem;
 }
 

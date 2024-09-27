@@ -3,44 +3,34 @@ import WorkExampleBox from '../Components/WorkExampleBox/WorkExampleBox'
 import ModalWork from '../Components/ModalWork/ModalWork'
 
 export default function WorkExamplePage() {
-    const datas = [
-        { id: 1, src: "../Main-img/OIP.jfif", title: "برنامه نویسی" },
-        { id: 2, src: "../Main-img/OIP.jfif", title: "برنامه نویسی" },
-        { id: 3, src: "../Main-img/OIP.jfif", title: "برنامه نویسی" },
-        { id: 4, src: "../Main-img/OIP.jfif", title: "برنامه نویسی" },
-        { id: 5, src: "../Main-img/OIP.jfif", title: "برنامه نویسی" },
-        { id: 6, src: "../Main-img/OIP.jfif", title: "برنامه نویسی" },
-        { id: 7, src: "../Main-img/OIP.jfif", title: "برنامه نویسی" },
-        { id: 8, src: "../Main-img/OIP.jfif", title: "برنامه نویسی" },
-        { id: 9, src: "../Main-img/OIP.jfif", title: "برنامه نویسی" }
-    ];
     const [showModal, setShowModal] = useState(false)
-    const [showData, setShowData] = useState([])
+    const [selectedModal, setSelectedModal] = useState(null)
     const bodyRef = useRef(document.body);
 
     useEffect(() => {
-        if(showModal){
+        if (showModal) {
             bodyRef.current.style.overflow = "hidden"
-        } else{
+        } else {
             bodyRef.current.style.overflow = "unset"
         }
     }, [showModal])
 
-    const clickHandler = () => {
+    const clickHandler = (modalData) => {
         setShowModal(true)
+        setSelectedModal(modalData)
     }
     const closeModalHandler = () => {
         setShowModal(false)
     }
 
-    return(
+    return (
         <div>
             <h2 className='text-white fs-4 mb-1'>نمونه <span className='text-yellow'>کارها</span></h2>
-            <p className='text-white'>ما در اینجا به برسی چندین تا از نمونه کار های بنده می پردازیم ...</p>
+            <p className='text-white'>ما در اینجا به بررسی چندین تا از نمونه کار های بنده می پردازیم ...</p>
             <section className='d-flex flex-wrap justify-content-around row-gap-3'>
-                <WorkExampleBox datas={datas} clickHandler={clickHandler}/>
+                <WorkExampleBox clickHandler={clickHandler} />
             </section>
-            {showModal && <ModalWork closeModalHandler={closeModalHandler}/>}
+            {showModal && <ModalWork {...selectedModal} closeModalHandler={closeModalHandler} />}
         </div>
     )
 }

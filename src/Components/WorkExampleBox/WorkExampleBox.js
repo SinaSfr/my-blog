@@ -1,13 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './WorkExampleBox.css'
+import modalDatas from '../../datas/modalData'
 
-export default function WorkExampleBox({ datas, clickHandler }) {
+export default function WorkExampleBox({ clickHandler }) {
     return (
         <>
-            {datas.map((data) => (
-                <div key={data.id} className='work-example' onClick={clickHandler}>
-                    <img src={data.src} alt="" />
-                    <div>{data.title}</div>
+            {modalDatas.map((modalData) => (
+                <div key={modalData.id} className='work-example' onClick={() => clickHandler(modalData)}>
+                    <img src={modalData.src} alt="" />
+                    <div>{modalData.category}</div>
                 </div>
             ))}
         </>

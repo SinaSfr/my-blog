@@ -3,6 +3,8 @@ import MyResume from "./MyResume/MyResume";
 import AboutMe from "./AboutMe/AboutMe";
 import MyServices from "./MyServices/MyServices";
 import WorkExamplePage from "./WorkExamplePage/WorkExamplePage";
+import MyWeblog from "./MyWeblog/MyWeblog";
+import ContactMe from "./ContactMe/ContactMe";
 
 const AppRouter = () => {
     const routes = [
@@ -10,8 +12,8 @@ const AppRouter = () => {
         { path: '/my-resume', element: <MyResume /> },
         { path: '/services', element: <MyServices/> },
         { path: '/example-works', element: <WorkExamplePage/> },
-        { path: '/weblog', element: <h2>weblog</h2> },
-        { path: '/contact-me', element: <h2>contact-me</h2> }
+        { path: '/weblog', element: <MyWeblog/> },
+        { path: '/contact-me', element: <ContactMe/> }
     ];
 
     return useRoutes(routes);
