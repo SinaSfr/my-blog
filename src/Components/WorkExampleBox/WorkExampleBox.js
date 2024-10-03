@@ -1,6 +1,6 @@
 import React from 'react'
 import './WorkExampleBox.css'
-import modalDatas from '../../datas/modalData'
+import modalDatas from '../../datas/ModalData'
 
 export default function WorkExampleBox({ clickHandler }) {
     return (

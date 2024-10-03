@@ -1,0 +1,43 @@
+.article-box {
+  max-width: 17rem;
+  background-color: #1a1a1a;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+div.article-box img{
+    width: 18rem;
+    cursor: pointer;
+}
+div.article-box p {
+  text-align: justify;
+}
+.article-box-date {
+  color: black;
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  background: #ffcc00;
+  padding: 0.2rem 0.4rem;
+  margin-bottom: 0;
+  border-radius: 0.2rem;
+  font-size: 14px;
+  opacity: 0.7;
+}
+.article-box-information {
+  padding: 0 0.8rem 0.8rem;
+  margin-top: 0.8rem;
+}
+.article-box-information p{
+    color: #909090;
+}
+.article-box-information h3{
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+.fs-7 {
+  font-size: 14px;
+}
+.w-18 {
+  width: 18rem;
+}
