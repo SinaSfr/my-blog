@@ -1,7 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import CloseIcon from '@mui/icons-material/Close';
 import './ModalWork.css'
-// import modalDatas from "../../datas/modalData";
 
 
 export default function ModalWork({ closeModalHandler, title, images, description }) {

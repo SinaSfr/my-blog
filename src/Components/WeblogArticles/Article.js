@@ -1,23 +1,21 @@
 import React from "react";
 import "./Article.css";
-import ArticleData from "../../datas/ArticleData";
+import ArticleDatas from "../../datas/ArticleDatas";
 
-export default function Article() {
+
+export default function Article({ onClick }) {
   return (
     <>
-      {ArticleData.map((data) => (
-        <div className="article-box">
+      {ArticleDatas.map((data) => (
+        <div key={data.articleBoxInformation.id} className="article-box">
           <div className="position-relative">
-            <img src="../../Main-img/OIP.jfif" alt="" className="text-white" />
-            <p className="article-box-date">28 آذر</p>
+            <img src={data.articleBoxInformation.image} alt="" className="text-white" onClick={() => onClick(data)}/>
+            <p className="article-box-date">{data.articleBoxInformation.date}</p>
           </div>
           <div className="article-box-information">
-            <h3>سئو چیست؟</h3>
-            <p>
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است.
-            </p>
-            <span className="text-white fs-7">بدون دیدگاه</span>
+            <h3 onClick={() => onClick(data)}>{data.articleBoxInformation.title}</h3>
+            <p>{data.articleBoxInformation.summary}</p>
+            <span className="text-white fs-7">{data.articleBoxInformation.opinion}</span>
           </div>
         </div>
       ))}
